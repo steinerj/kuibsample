@@ -1,0 +1,220 @@
+<!--
+Auto-generated
+Do not edit!!!
+-->
+
+<div class="row ">
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <span><kb-grid
+    #grid0
+    [config]="$config.components.grid0"
+    [dataService]="$dataServices['TodoDS']"
+    [state]="$dataServicesState['TodoDS']"
+    [view]="$dataServicesResult['TodoDS']"
+    [(model)]="$dataModels['TodoDSModel']"
+>
+    <kendo-grid
+    [pageable]="grid0.config.pageable"
+    [sortable]="grid0.config.sortable"
+    [filterable]="grid0.config.filterable"
+    [groupable]="grid0.config.groupable"
+    [data]="grid0.view | async"
+    [pageSize]="grid0.state.take"
+    [skip]="grid0.state.skip"
+    [sort]="grid0.state.sort"
+    [filter]="grid0.state.filter"
+    [group]="grid0.state.group"
+    (dataStateChange)="grid0.dataStateChange($event)"
+    (edit)="grid0.editHandler($event)"
+    (cancel)="grid0.cancelHandler($event)"
+    (save)="grid0.saveHandler($event)"
+    kendoGridSelectBy
+    [selectedKeys]="grid0.selectedKeys"
+    [selectable]="{ mode: 'single' }"
+    (selectionChange)="grid0.selectionChange($event)"
+    [resizable]="grid0.config.resizable"
+    [reorderable]="grid0.config.reorderable"
+    >
+    <kendo-grid-column
+        [editable]="false"
+        [field]="'taskart'"
+    [filterable]="true"
+        [filter]="'text'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.ToDos.components.grid0.columns.taskart' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [editable]="false"
+        [field]="'kunde'"
+    [filterable]="true"
+        [filter]="'text'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.ToDos.components.grid0.columns.kunde' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [editable]="false"
+        [field]="'taskname'"
+    [filterable]="true"
+        [filter]="'text'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.ToDos.components.grid0.columns.taskname' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [editable]="false"
+        [field]="'angebot'"
+    [filterable]="true"
+        [filter]="'numeric'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.ToDos.components.grid0.columns.angebot' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [editable]="false"
+        [field]="'todo_id'"
+    [filterable]="true"
+        [filter]="'numeric'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.ToDos.components.grid0.columns.todo_id' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [field]="'wfl_erledigen'"
+    [filterable]="true"
+        [filter]="'boolean'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.ToDos.components.grid0.columns.wfl_erledigen' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [field]="'wfl_erfolg'"
+    [filterable]="true"
+        [filter]="'boolean'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.ToDos.components.grid0.columns.wfl_erfolg' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [field]="'wfl_erfolg_frage'"
+    [filterable]="true"
+        [filter]="'text'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.ToDos.components.grid0.columns.wfl_erfolg_frage' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [editable]="false"
+        [field]="'wfl_bez'"
+    [filterable]="true"
+        [filter]="'text'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.ToDos.components.grid0.columns.wfl_bez' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [editable]="false"
+        [field]="'task_status'"
+    [filterable]="true"
+        [filter]="'numeric'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.ToDos.components.grid0.columns.task_status' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-command-column [width]="grid0.config.commandColumnWidth">
+        <ng-template kendoGridCellTemplate>
+            <button kendoGridEditCommand><span class="k-icon k-i-edit"></span>{{ 'modules.ToDos.views.ToDos.components.grid0.editMessages.edit' | translate }}</button>
+        </ng-template>
+        </kendo-grid-command-column>
+        </kendo-grid>
+        <kendo-dialog *ngIf="grid0.popupActive" (close)="grid0.closeEditor()">
+            <kendo-dialog-titlebar>
+                {{ grid0.isNew ? 'Add new' : 'Edit' }}
+            </kendo-dialog-titlebar>
+            <kb-data-form [model]="grid0.editDataModel" [formGroup]="grid0.formGroup">
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl189">{{ 'modules.ToDos.views.ToDos.components.grid0.columns.taskart' | translate }}</label>
+                    </div>
+                    <div class="col-md-7"> {{grid0.editDataModel.taskart | formatValue: ''}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl68">{{ 'modules.ToDos.views.ToDos.components.grid0.columns.kunde' | translate }}</label>
+                    </div>
+                    <div class="col-md-7"> {{grid0.editDataModel.kunde | formatValue: ''}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl69">{{ 'modules.ToDos.views.ToDos.components.grid0.columns.taskname' | translate }}</label>
+                    </div>
+                    <div class="col-md-7"> {{grid0.editDataModel.taskname | formatValue: ''}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl71">{{ 'modules.ToDos.views.ToDos.components.grid0.columns.angebot' | translate }}</label>
+                    </div>
+                    <div class="col-md-7"> {{grid0.editDataModel.angebot | formatValue: ''}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl64">{{ 'modules.ToDos.views.ToDos.components.grid0.columns.todo_id' | translate }}</label>
+                    </div>
+                    <div class="col-md-7"> {{grid0.editDataModel.todo_id | formatValue: ''}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl76">{{ 'modules.ToDos.views.ToDos.components.grid0.columns.wfl_erledigen' | translate }}</label>
+                    </div>
+                    <div class="col-md-7">
+                        <kb-check-box [config]="$config.components.ctl76" [id]="'ctl76'" [(model)]="grid0.editDataModel.wfl_erledigen" [formGroup]="grid0.formGroup">
+                        </kb-check-box>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl218">{{ 'modules.ToDos.views.ToDos.components.grid0.columns.wfl_erfolg' | translate }}</label>
+                    </div>
+                    <div class="col-md-7">
+                        <kb-check-box [config]="$config.components.ctl218" [id]="'ctl218'" [(model)]="grid0.editDataModel.wfl_erfolg" [formGroup]="grid0.formGroup">
+                        </kb-check-box>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl219">{{ 'modules.ToDos.views.ToDos.components.grid0.columns.wfl_erfolg_frage' | translate }}</label>
+                    </div>
+                    <div class="col-md-7">
+                        <kb-text-box [config]="$config.components.ctl219" [id]="'ctl219'" [(model)]="grid0.editDataModel.wfl_erfolg_frage" [formGroup]="grid0.formGroup">
+                        </kb-text-box>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl73">{{ 'modules.ToDos.views.ToDos.components.grid0.columns.wfl_bez' | translate }}</label>
+                    </div>
+                    <div class="col-md-7"> {{grid0.editDataModel.wfl_bez | formatValue: ''}}</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl78">{{ 'modules.ToDos.views.ToDos.components.grid0.columns.task_status' | translate }}</label>
+                    </div>
+                    <div class="col-md-7"> {{grid0.editDataModel.task_status | formatValue: ''}}</div>
+                </div>
+            </kb-data-form>
+            <kendo-dialog-actions>
+                <button class="k-button" (click)="grid0.cancelHandler($event)">
+            <span class="k-icon k-i-cancel"></span>{{ 'modules.ToDos.views.ToDos.components.grid0.editMessages.canceledit' | translate }}
+        </button>
+                <button class="k-button k-primary" [disabled]="!grid0.formGroup.valid" (click)="grid0.saveHandler($event)">
+            <span class="k-icon k-i-checkmark"></span>{{ 'modules.ToDos.views.ToDos.components.grid0.editMessages.update' | translate }}
+        </button>
+            </kendo-dialog-actions>
+        </kendo-dialog>
+
+        </kb-grid>
+        </span>
+    </div>
+</div>

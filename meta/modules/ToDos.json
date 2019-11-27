@@ -1,0 +1,453 @@
+{
+    "authorization": {
+        "allowedRoles": []
+    },
+    "children": [
+        {
+            "annotations": {
+                "dataSources": {
+                    "name": "dataSourceName"
+                }
+            },
+            "authorization": {
+                "allowedRoles": []
+            },
+            "children": [
+                {
+                    "altRowTemplateFunction": "",
+                    "altRowTemplateId": "",
+                    "annotationRefs": {
+                        "dataSourceName": {
+                            "kind": "dataSourceName",
+                            "value": "58b59c94-491a-4fdd-97b8-c3788fd18db8.TodoDS"
+                        }
+                    },
+                    "annotations": {
+                        "id": "componentIdentifier"
+                    },
+                    "columns": [
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "debounce": 0,
+                                "defaultValue": "",
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "id": "ctl189",
+                                "model": "",
+                                "name": "taskart",
+                                "placeholder": "",
+                                "schemaVersion": "1.0",
+                                "title": "Taskart",
+                                "type": "text-box",
+                                "uniqueID": "ae57c198-1ac7-41d4-ab34-e5e43165846c",
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            "editable": false,
+                            "encoded": true,
+                            "field": "taskart",
+                            "filterable": true,
+                            "format": "",
+                            "sortable": true,
+                            "title": "Taskart"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "debounce": 0,
+                                "defaultValue": "",
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "id": "ctl68",
+                                "model": "",
+                                "name": "kunde",
+                                "placeholder": "",
+                                "schemaVersion": "1.0",
+                                "title": "Kunden Alias",
+                                "type": "text-box",
+                                "uniqueID": "67f8cda3-2062-40a0-af83-ca8790354f0b",
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            "editable": false,
+                            "encoded": true,
+                            "field": "kunde",
+                            "filterable": true,
+                            "format": "",
+                            "sortable": true,
+                            "title": "Kunden Alias"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "debounce": 0,
+                                "defaultValue": "",
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "id": "ctl69",
+                                "model": "",
+                                "name": "taskname",
+                                "placeholder": "",
+                                "schemaVersion": "1.0",
+                                "title": "Taskname",
+                                "type": "text-box",
+                                "uniqueID": "f5463d56-dcba-45a3-92ca-6aec2e321f35",
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            "editable": false,
+                            "encoded": true,
+                            "field": "taskname",
+                            "filterable": true,
+                            "format": "",
+                            "sortable": true,
+                            "title": "Taskname"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "downArrowText": "",
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "id": "ctl71",
+                                "model": "",
+                                "name": "angebot",
+                                "placeholder": "",
+                                "schemaVersion": "1.0",
+                                "spinners": false,
+                                "step": 1,
+                                "title": "Angebotsnummer",
+                                "type": "integer-text-box",
+                                "uniqueID": "9f12c939-f478-4625-aaeb-8b8d6c2c3405",
+                                "upArrowText": "",
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            "editable": false,
+                            "encoded": true,
+                            "field": "angebot",
+                            "filterable": true,
+                            "format": "",
+                            "sortable": true,
+                            "title": "Angebotsnummer"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "downArrowText": "",
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "id": "ctl64",
+                                "model": "",
+                                "name": "todo_id",
+                                "placeholder": "",
+                                "schemaVersion": "1.0",
+                                "spinners": false,
+                                "step": 1,
+                                "title": "ID",
+                                "type": "integer-text-box",
+                                "uniqueID": "f17d786c-11e8-4781-8539-e928b5c1d3e8",
+                                "upArrowText": "",
+                                "validation": {
+                                    "required": true
+                                }
+                            },
+                            "editable": false,
+                            "encoded": true,
+                            "field": "todo_id",
+                            "filterable": true,
+                            "format": "",
+                            "sortable": true,
+                            "title": "ID"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "defaultValue": false,
+                                "disabled": false,
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "id": "ctl76",
+                                "model": "",
+                                "name": "wfl_erledigen",
+                                "schemaVersion": "1.0",
+                                "title": "bereit für erledigen?",
+                                "type": "check-box",
+                                "uniqueID": "5386cdd3-8eaa-4e67-bd63-dcb9f0c2395b"
+                            },
+                            "editable": true,
+                            "encoded": true,
+                            "field": "wfl_erledigen",
+                            "filterable": true,
+                            "format": "",
+                            "sortable": true,
+                            "title": "bereit für erledigen?"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "defaultValue": false,
+                                "disabled": false,
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "id": "ctl218",
+                                "model": "",
+                                "name": "wfl_erfolg",
+                                "schemaVersion": "1.0",
+                                "title": "Workf.Erfolg",
+                                "type": "check-box",
+                                "uniqueID": "01430637-66ea-4a1a-9b39-6aa5da2af496"
+                            },
+                            "editable": true,
+                            "encoded": true,
+                            "field": "wfl_erfolg",
+                            "filterable": true,
+                            "format": "",
+                            "sortable": true,
+                            "title": "Workf.Erfolg"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "debounce": 0,
+                                "defaultValue": "",
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "id": "ctl219",
+                                "model": "",
+                                "name": "wfl_erfolg_frage",
+                                "placeholder": "",
+                                "schemaVersion": "1.0",
+                                "title": "Wfl Erfolg Frage",
+                                "type": "text-box",
+                                "uniqueID": "57f8c51b-a89f-4260-850d-5c9d5ba19dd2",
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            "editable": true,
+                            "encoded": true,
+                            "field": "wfl_erfolg_frage",
+                            "filterable": true,
+                            "format": "",
+                            "sortable": true,
+                            "title": "Wfl Erfolg Frage"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "debounce": 0,
+                                "defaultValue": "",
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "id": "ctl73",
+                                "model": "",
+                                "name": "wfl_bez",
+                                "placeholder": "",
+                                "schemaVersion": "1.0",
+                                "title": "Workflow Bezeichnung",
+                                "type": "text-box",
+                                "uniqueID": "286f37af-f518-4a78-a0d4-fca32a6f5600",
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            "editable": false,
+                            "encoded": true,
+                            "field": "wfl_bez",
+                            "filterable": true,
+                            "format": "",
+                            "sortable": true,
+                            "title": "Workflow Bezeichnung"
+                        },
+                        {
+                            "componentOptions": {
+                                "annotations": {
+                                    "id": "componentIdentifier"
+                                },
+                                "downArrowText": "",
+                                "events": {
+                                    "onChange": ""
+                                },
+                                "id": "ctl78",
+                                "model": "",
+                                "name": "task_status",
+                                "placeholder": "",
+                                "schemaVersion": "1.0",
+                                "spinners": false,
+                                "step": 1,
+                                "title": "Taskstatus",
+                                "type": "integer-text-box",
+                                "uniqueID": "4c0a9586-6913-429b-9d63-852f1e469a79",
+                                "upArrowText": "",
+                                "validation": {
+                                    "required": false
+                                }
+                            },
+                            "editable": false,
+                            "encoded": true,
+                            "field": "task_status",
+                            "filterable": true,
+                            "format": "",
+                            "sortable": true,
+                            "title": "Taskstatus"
+                        }
+                    ],
+                    "containerUid": "c3bf04b1-0dae-4d54-af15-7982a3abadb5",
+                    "dataSourceName": "TodoDS",
+                    "editOptions": {
+                        "allowDelete": false,
+                        "allowEdit": true,
+                        "allowInsert": false,
+                        "rowButtonIcons": {
+                            "destroy": "k-icon k-i-close",
+                            "edit": "k-icon k-i-edit"
+                        },
+                        "rowButtonLabels": {
+                            "canceledit": "Cancel",
+                            "destroy": "Delete",
+                            "edit": "Erledigen",
+                            "update": "Update"
+                        },
+                        "toolbarButtonIcons": {
+                            "cancel": "k-icon k-i-cancel",
+                            "create": "k-icon k-i-add",
+                            "save": "k-icon k-i-checkmark"
+                        },
+                        "toolbarButtonLabels": {
+                            "cancel": "Cancel changes",
+                            "create": "New",
+                            "save": "Save changes"
+                        }
+                    },
+                    "editable": "Popup",
+                    "events": {
+                        "onDataBound": "",
+                        "onRowCreate": "",
+                        "onRowDelete": "",
+                        "onRowSelect": "",
+                        "onRowUpdate": ""
+                    },
+                    "filterable": true,
+                    "groupable": false,
+                    "id": "grid0",
+                    "model": "TodoDSModel",
+                    "reorderable": true,
+                    "resizable": true,
+                    "rowTemplateFunction": "",
+                    "rowTemplateId": "",
+                    "schemaVersion": "1.0",
+                    "selectable": "Single",
+                    "sortable": true,
+                    "type": "grid",
+                    "uniqueID": "2ece3eb3-f9fd-4f69-9a10-1ab5b8db297a"
+                }
+            ],
+            "classList": "",
+            "customSections": {
+                "top": "topSection.html"
+            },
+            "dataSources": [
+                {
+                    "batch": true,
+                    "dataProviderName": "aws",
+                    "dataSourceName": "ToDo",
+                    "name": "TodoDS",
+                    "pageSize": 20,
+                    "uniqueID": "58b59c94-491a-4fdd-97b8-c3788fd18db8"
+                }
+            ],
+            "events": {
+                "hideEventHandler": "onHide",
+                "initEventHandler": "onInit",
+                "showEventHandler": "onShow"
+            },
+            "hidden": false,
+            "label": "ToDo Übersicht",
+            "name": "ToDos",
+            "rows": [
+                {
+                    "authorization": {
+                        "allowedRoles": []
+                    },
+                    "classList": "",
+                    "cols": [
+                        {
+                            "authorization": {
+                                "allowedRoles": []
+                            },
+                            "breakpoints": {
+                                "lg": 12,
+                                "md": 12,
+                                "sm": 12,
+                                "xs": 12
+                            },
+                            "classList": "",
+                            "hidden": {
+                                "lg": false,
+                                "md": false,
+                                "sm": false,
+                                "xs": false
+                            },
+                            "rows": [],
+                            "schemaVersion": "1.0",
+                            "type": "col",
+                            "uniqueID": "c3bf04b1-0dae-4d54-af15-7982a3abadb5"
+                        }
+                    ],
+                    "schemaVersion": "1.0",
+                    "type": "row",
+                    "uniqueID": "e3721dd4-4dba-4cd2-b613-3e4e7f1e825f"
+                }
+            ],
+            "schemaVersion": "1.0",
+            "type": "view",
+            "uniqueID": "5f341a4b-36ab-4d3e-aea6-28b022aa9ed3",
+            "viewType": "blank"
+        }
+    ],
+    "description": "",
+    "moduleType": "default",
+    "name": "ToDos",
+    "order": 2,
+    "schemaVersion": "1.0",
+    "thumbnail": {
+        "background": "#00a2e8",
+        "color": "#ffffff",
+        "icon": "fa-calendar-check-o"
+    },
+    "type": "module",
+    "uniqueID": "04f46094-b631-4b24-8409-ce02f65e38ab"
+}

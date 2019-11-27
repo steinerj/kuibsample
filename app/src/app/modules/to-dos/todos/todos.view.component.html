@@ -1,0 +1,183 @@
+<!--
+Auto-generated
+Do not edit!!!
+-->
+
+<div class="row ">
+
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <span><kb-grid
+    #grid0
+    [config]="$config.components.grid0"
+    [dataService]="$dataServices['awsSource']"
+    [state]="$dataServicesState['awsSource']"
+    [view]="$dataServicesResult['awsSource']"
+    [(model)]="$dataModels['awsSourceModel']"
+>
+    <kendo-grid
+    [pageable]="grid0.config.pageable"
+    [sortable]="grid0.config.sortable"
+    [filterable]="grid0.config.filterable"
+    [groupable]="grid0.config.groupable"
+    [data]="grid0.view | async"
+    [pageSize]="grid0.state.take"
+    [skip]="grid0.state.skip"
+    [sort]="grid0.state.sort"
+    [filter]="grid0.state.filter"
+    [group]="grid0.state.group"
+    (dataStateChange)="grid0.dataStateChange($event)"
+    (edit)="grid0.editHandler($event)"
+    (cancel)="grid0.cancelHandler($event)"
+    (save)="grid0.saveHandler($event)"
+    kendoGridSelectBy
+    [selectedKeys]="grid0.selectedKeys"
+    [selectable]="{ mode: 'single' }"
+    (selectionChange)="grid0.selectionChange($event)"
+    [resizable]="grid0.config.resizable"
+    [reorderable]="grid0.config.reorderable"
+    >
+    <kendo-grid-column
+        [field]="'wfl_bez'"
+    [filterable]="true"
+        [filter]="'text'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.todos.components.grid0.columns.wfl_bez' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [field]="'kunde'"
+    [filterable]="true"
+        [filter]="'text'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.todos.components.grid0.columns.kunde' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [field]="'task'"
+    [filterable]="true"
+        [filter]="'text'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.todos.components.grid0.columns.task' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [field]="'angebot'"
+    [filterable]="true"
+        [filter]="'numeric'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.todos.components.grid0.columns.angebot' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [field]="'todo_id'"
+    [filterable]="true"
+        [filter]="'numeric'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.todos.components.grid0.columns.todo_id' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [field]="'wfl_erfolg'"
+    [filterable]="true"
+        [filter]="'boolean'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.todos.components.grid0.columns.wfl_erfolg' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-column
+        [field]="'task_status'"
+    [filterable]="true"
+        [filter]="'numeric'"
+            [sortable]="true"
+    [title]="'modules.ToDos.views.todos.components.grid0.columns.task_status' | translate"
+    >
+        </kendo-grid-column>
+    <kendo-grid-command-column [width]="grid0.config.commandColumnWidth">
+        <ng-template kendoGridCellTemplate>
+            <button kendoGridEditCommand><span class="k-icon k-i-edit"></span>{{ 'modules.ToDos.views.todos.components.grid0.editMessages.edit' | translate }}</button>
+        </ng-template>
+        </kendo-grid-command-column>
+        </kendo-grid>
+        <kendo-dialog *ngIf="grid0.popupActive" (close)="grid0.closeEditor()">
+            <kendo-dialog-titlebar>
+                {{ grid0.isNew ? 'Add new' : 'Edit' }}
+            </kendo-dialog-titlebar>
+            <kb-data-form [model]="grid0.editDataModel" [formGroup]="grid0.formGroup">
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl9">{{ 'modules.ToDos.views.todos.components.grid0.columns.wfl_bez' | translate }}</label>
+                    </div>
+                    <div class="col-md-7">
+                        <kb-text-box [config]="$config.components.ctl9" [id]="'ctl9'" [(model)]="grid0.editDataModel.wfl_bez" [formGroup]="grid0.formGroup">
+                        </kb-text-box>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl4">{{ 'modules.ToDos.views.todos.components.grid0.columns.kunde' | translate }}</label>
+                    </div>
+                    <div class="col-md-7">
+                        <kb-text-box [config]="$config.components.ctl4" [id]="'ctl4'" [(model)]="grid0.editDataModel.kunde" [formGroup]="grid0.formGroup">
+                        </kb-text-box>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl6">{{ 'modules.ToDos.views.todos.components.grid0.columns.task' | translate }}</label>
+                    </div>
+                    <div class="col-md-7">
+                        <kb-text-box [config]="$config.components.ctl6" [id]="'ctl6'" [(model)]="grid0.editDataModel.task" [formGroup]="grid0.formGroup">
+                        </kb-text-box>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl7">{{ 'modules.ToDos.views.todos.components.grid0.columns.angebot' | translate }}</label>
+                    </div>
+                    <div class="col-md-7">
+                        <kb-integer-text-box [config]="$config.components.ctl7" [id]="'ctl7'" [(model)]="grid0.editDataModel.angebot" [formGroup]="grid0.formGroup">
+                        </kb-integer-text-box>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl0">{{ 'modules.ToDos.views.todos.components.grid0.columns.todo_id' | translate }}</label>
+                    </div>
+                    <div class="col-md-7">
+                        <kb-integer-text-box [config]="$config.components.ctl0" [id]="'ctl0'" [(model)]="grid0.editDataModel.todo_id" [formGroup]="grid0.formGroup">
+                        </kb-integer-text-box>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl10">{{ 'modules.ToDos.views.todos.components.grid0.columns.wfl_erfolg' | translate }}</label>
+                    </div>
+                    <div class="col-md-7">
+                        <kb-check-box [config]="$config.components.ctl10" [id]="'ctl10'" [(model)]="grid0.editDataModel.wfl_erfolg" [formGroup]="grid0.formGroup">
+                        </kb-check-box>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="ctl14">{{ 'modules.ToDos.views.todos.components.grid0.columns.task_status' | translate }}</label>
+                    </div>
+                    <div class="col-md-7">
+                        <kb-integer-text-box [config]="$config.components.ctl14" [id]="'ctl14'" [(model)]="grid0.editDataModel.task_status" [formGroup]="grid0.formGroup">
+                        </kb-integer-text-box>
+                    </div>
+                </div>
+            </kb-data-form>
+            <kendo-dialog-actions>
+                <button class="k-button" (click)="grid0.cancelHandler($event)">
+            <span class="k-icon k-i-cancel"></span>{{ 'modules.ToDos.views.todos.components.grid0.editMessages.canceledit' | translate }}
+        </button>
+                <button class="k-button k-primary" [disabled]="!grid0.formGroup.valid" (click)="grid0.saveHandler($event)">
+            <span class="k-icon k-i-checkmark"></span>{{ 'modules.ToDos.views.todos.components.grid0.editMessages.update' | translate }}
+        </button>
+            </kendo-dialog-actions>
+        </kendo-dialog>
+
+        </kb-grid>
+        </span>
+    </div>
+</div>

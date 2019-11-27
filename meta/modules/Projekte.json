@@ -1,0 +1,19 @@
+{
+    "authorization": {
+        "allowedRoles": []
+    },
+    "children": [],
+    "description": "",
+    "label": "Projekte",
+    "moduleType": "default",
+    "name": "Projekte",
+    "order": 1,
+    "schemaVersion": "1.0",
+    "thumbnail": {
+        "background": "#00a2e8",
+        "color": "#ffffff",
+        "icon": "fa-group"
+    },
+    "type": "module",
+    "uniqueID": "0ad06ca0-8b65-4e15-abac-5fada825e9ff"
+}

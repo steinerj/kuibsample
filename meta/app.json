@@ -1,0 +1,24 @@
+{
+    "authorization": {
+        "roles": []
+    },
+    "build": {
+        "debug": {
+            "baseHref": ""
+        },
+        "release": {
+            "baseHref": ""
+        }
+    },
+    "children": [],
+    "defaultLangaugeCulture": "en-US",
+    "defaultLanguageLabel": "English",
+    "description": "",
+    "layout": {},
+    "name": "update",
+    "schemaVersion": "1.4.21",
+    "targetFramework": "Angular",
+    "theme": "blueopal",
+    "type": "app",
+    "uniqueID": "7f417960-3220-43ac-8765-e4c099766d6e"
+}
